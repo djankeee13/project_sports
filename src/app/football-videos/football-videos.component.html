@@ -1,0 +1,31 @@
+<div class="container">
+ 
+    <div class="all" *ngFor="let video of videos">
+
+
+    <div class="row" >
+        <div class="col-12" style="text-align: center;">
+            <h1> {{video.competition.name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 edit">
+            <h1>{{video.side1.name}}</h1>
+        </div>
+        <div class="col-8 edit" >
+            <a [href]="video.url" target="_blank"> <img [src]="video.thumbnail" alt="x" width="500px;" height="auto"></a>
+        </div>
+        <div class="col-2 edit">
+            <h1>{{video.side2.name}} </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" style="text-align: center; margin-top: 5px;">
+            <h1> {{video.date}}</h1>
+        </div>
+        
+
+    </div>
+    </div>
+    
+</div>

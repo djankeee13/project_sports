@@ -1,0 +1,39 @@
+
+<div class="navbar">
+    <div class="logo">
+        <a routerLink="/app-home">
+            <span style="font-size: 22px; margin: 5px 5px 0 20px;"> BFS</span>
+            <img src="../../assets/sports.png" width="40px" alt="x">
+        </a>
+       
+    </div>
+    <div class="menu-items">
+        <div class="menu-icon" (click)="openMenu()">
+           <img src="../../assets/menu1.png" alt="" width="20px" >
+        </div>
+        <div class="menu" [class.menuClass] ="menuVariable"  >
+            <ul>
+                <li> <a routerLink="/app-home" (click)="openMenu()" > Home</a> 
+                   
+                </li>
+                <li><a routerLink="/app-football" [matMenuTriggerFor]="menu1"> Football</a>
+                    <mat-menu #menu1="matMenu">
+                        <button class="btn-menu" mat-menu-item>Teams</button>
+                        <button class="btn-menu"  mat-menu-item>Standing</button>
+                        <a routerLink="/app-football/app-football-videos"><button class="btn-menu"  mat-menu-item>Videos</button> </a> 
+                      </mat-menu>
+                    </li>
+                <li> <a routerLink="/app-basketball" [matMenuTriggerFor]="menu2"> Basketball</a>
+                    <mat-menu #menu2="matMenu">
+                        <button class="btn-menu" mat-menu-item>Teams</button>
+                        <button class="btn-menu"  mat-menu-item>Games</button>
+                        <button class="btn-menu"  mat-menu-item>Stats</button>
+                      </mat-menu>
+                </li>
+                <li> <button class="btn btn1"> SIGN UP</button></li>
+                <li><button class="btn btn2"> LOG IN</button></li>
+            </ul>
+        </div>
+      
+    </div>
+</div>

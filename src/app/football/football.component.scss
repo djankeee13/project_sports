@@ -1,0 +1,74 @@
+.bg{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.up{
+    /* background-color: lightcoral; */
+    background: url('../../assets/team.jpg');
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.up:hover{
+    opacity: 1;
+    transition: 1s ease-in;
+}
+.middle{
+    /*  background-color: skyblue; */
+    background: url('../../assets/audience.jpg');
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    opacity: 0.8;
+ }
+ .middle:hover{
+    opacity: 1;
+    transition: 1s ease-in;
+}
+.down{
+   /*  background-color: skyblue; */
+   background: url('../../assets/football-goal.gif');
+   background-size: cover;
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat;
+   opacity: 0.8;
+}
+.down:hover{
+    opacity: 1;
+    transition: 1s ease-in;
+}
+h1{ //style="color: var(--first); font-size:50px; margin-bottom:30px; font-weight: 900;"
+color: var(--second);
+font-size: 50px;
+margin-bottom: 30px;
+font-weight: 900;
+}
+button{
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+  .btn {
+    background-color: var(--second); 
+    border: 2px solid var(--second);
+  }
+  .btn:hover {
+    background-color: var(--first);
+    color: white;
+  }

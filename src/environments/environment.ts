@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://free-football-soccer-videos1.p.rapidapi.com/v1/',
+  XRapidAPIHostHeaderName : 'X-RapidAPI-Host',
+  XRapidAPIHostHeaderValue: 'free-football-soccer-videos1.p.rapidapi.com',
+  XRapidAPIKeyHeaderName : 'X-RapidAPI-Key',
+  XRapidAPIKeyHeaderValue: '64a8892e4fmshd7b99b6842df0c7p1ea89ejsn323053caf5e9'
 };
 
 /*
