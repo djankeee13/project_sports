@@ -15,6 +15,11 @@ import { FootballStandingComponent } from './football-standing/football-standing
 import { FootballTeamsComponent } from './football-teams/football-teams.component';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
+import { BasketballTeamsComponent } from './basketball-teams/basketball-teams.component';
+import { BasketballGamesComponent } from './basketball-games/basketball-games.component';
+import { BasketballStatsComponent } from './basketball-stats/basketball-stats.component';
+import { BasketballTeamsChildComponent } from './basketball-teams-child/basketball-teams-child.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,11 @@ import { FormsModule } from '@angular/forms';
     NotfoundComponent,
     FootballVideosComponent,
     FootballStandingComponent,
-    FootballTeamsComponent
+    FootballTeamsComponent,
+    BasketballTeamsComponent,
+    BasketballGamesComponent,
+    BasketballStatsComponent,
+    BasketballTeamsChildComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatMenuModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

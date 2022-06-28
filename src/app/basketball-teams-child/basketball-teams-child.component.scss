@@ -1,0 +1,23 @@
+.all {
+    width: 300px;
+    height: 270px;
+   /*  background: var(--first); */
+   background: url('../../assets/basketball-ball.png');
+   background-size:fill;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    border-radius: 15px;
+}
+h1{
+    font-weight: 600;
+}
+h2{
+    margin-left: 95px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.all:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

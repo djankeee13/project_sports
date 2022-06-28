@@ -8,6 +8,11 @@ import { environment } from 'src/environments/environment';
 export class ApifootballService {
 
   constructor(private http : HttpClient) { }
+
+  getLeague(){
+    return this.http.get<any>('https://api-football-standings.azharimm.site/leagues')
+  }
+
   getVideos(){
     return this.http.get<any>(environment.baseUrl,{
       headers: new HttpHeaders()
@@ -15,5 +20,9 @@ export class ApifootballService {
       .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue),
     })
   }
+
+  getSeason(pick: any, id: any){
+    return this.http.get<any>(`https://api-football-standings.azharimm.site/leagues/${pick}/standings?season=${id}&sort=asc`)
+  } 
 }
 

@@ -16,18 +16,18 @@
                 <li> <a routerLink="/app-home" (click)="openMenu()" > Home</a> 
                    
                 </li>
-                <li><a routerLink="/app-football" [matMenuTriggerFor]="menu1"> Football</a>
-                    <mat-menu #menu1="matMenu">
-                        <button class="btn-menu" mat-menu-item>Teams</button>
-                        <button class="btn-menu"  mat-menu-item>Standing</button>
+                <li><a routerLink="/app-football" [matMenuTriggerFor]="menu1" (click)="openMenu()"> Football</a>
+                    <mat-menu #menu1="matMenu" >
+                       <a routerLink="/app-football/app-football-teams"><button class="btn-menu"  mat-menu-item>Teams</button> </a> 
+                        <a routerLink="/app-football/app-football-standing"><button class="btn-menu"  mat-menu-item>Standing</button> </a> 
                         <a routerLink="/app-football/app-football-videos"><button class="btn-menu"  mat-menu-item>Videos</button> </a> 
                       </mat-menu>
                     </li>
-                <li> <a routerLink="/app-basketball" [matMenuTriggerFor]="menu2"> Basketball</a>
+                <li> <a routerLink="/app-basketball" [matMenuTriggerFor]="menu2" (click)="openMenu()"> Basketball</a>
                     <mat-menu #menu2="matMenu">
-                        <button class="btn-menu" mat-menu-item>Teams</button>
-                        <button class="btn-menu"  mat-menu-item>Games</button>
-                        <button class="btn-menu"  mat-menu-item>Stats</button>
+                        <a routerLink="/app-basketball/app-basketball-teams"><button class="btn-menu"  mat-menu-item>Teams</button> </a> 
+                        <a routerLink="/app-basketball/app-basketball-games"><button class="btn-menu"  mat-menu-item>Games</button> </a> 
+                      <a routerLink="/app-basketball/app-basketball-stats"><button class="btn-menu"  mat-menu-item>Stats</button> </a> 
                       </mat-menu>
                 </li>
                 <li> <button class="btn btn1"> SIGN UP</button></li>

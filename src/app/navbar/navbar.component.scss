@@ -57,6 +57,13 @@
   }
   .btn-menu{
     padding: 10px 20px;
+    background: var(--third);
+    color: #fff;
+    font-weight: 500;
+  }
+  .btn-menu:hover{
+    background: var(--third);
+    color: var(--first);
   }
   .menu-icon{
     display: none;

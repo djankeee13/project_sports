@@ -1,0 +1,20 @@
+.inputf{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.inputf input {
+    background: transparent;
+    border: 1px solid var(--primary);
+    height: 30px;
+    width: 200px;
+    margin-bottom: 8px;
+}
+.mar{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
