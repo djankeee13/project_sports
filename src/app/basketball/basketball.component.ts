@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basketball.component.scss']
 })
 export class BasketballComponent implements OnInit {
-
+  toggleTeams:boolean = true;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toggleComponent(){
+    this.toggleTeams =! this.toggleTeams;
+  }
 }

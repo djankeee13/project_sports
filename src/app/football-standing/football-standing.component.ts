@@ -32,7 +32,7 @@ export class FootballStandingComponent implements OnInit {
   constructor(private api: ApifootballService) { }
 
   ngOnInit(): void {
-    this.renderStanding('eng.1','2020')
+    this.renderStanding('eng.1','2020') // query p zadnja god
   }
   renderStanding(pick: any,event : any){
      

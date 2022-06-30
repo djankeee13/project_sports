@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApibasketballService } from '../services/apibasketball.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { ApibasketballService } from '../services/apibasketball.service';
 })
 export class BasketballTeamsComponent implements OnInit {
   teams! : any;
+  @Input() toggle!: boolean;
   constructor(private api: ApibasketballService) { }
 
   ngOnInit(): void {

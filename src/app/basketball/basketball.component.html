@@ -1,1 +1,17 @@
-<p>basketball works!</p>
+
+    <div class="container">
+        <div class="bg up">
+            <h1 >TEAMS</h1>
+            <!-- <a routerLink="app-football-teams"> --><button class="btn" (click)="toggleComponent()">  {{toggleTeams? "View More.." : "VIew  Less.."}}</button> <!-- </a> -->
+        </div>
+        <app-basketball-teams [toggle]="toggleTeams"></app-basketball-teams>
+        <div class="bg middle">
+            <h1>STANDING</h1>
+            <!-- <a routerLink="app-football-standing"> --><button class="btn"> View More ...</button> <!-- </a>  -->
+        </div>
+        <div class="bg down">
+            <h1>STATS</h1>
+            <!-- <a routerLink="app-football-videos"> --><button class="btn"> View More ...</button> <!-- </a> -->
+        </div>
+    </div>
+  

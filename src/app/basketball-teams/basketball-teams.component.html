@@ -1,4 +1,4 @@
-<div class="container edit">
+<div class="container edit" [class.showClass]="toggle">
     <div  *ngFor="let team of teams">
         <app-basketball-teams-child 
         [bindName]="team.name" 
