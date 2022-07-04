@@ -1,7 +1,7 @@
 <div class="container">
   
     <div class="row" style="margin-top: 20px; background: var(--second); color: #fff;">
-        <div class="col-7 " style="display: flex; align-items: center" style="text-align: center; margin-top:25px; font-weight: 800;">
+        <div class="col-7 " style="display: flex; align-items: center" style="text-align: center; margin-top:25px; font-weight: 800; ">
             <h1 > {{data.name}}  </h1>
             <h1>{{data.seasonDisplay}}</h1>
         </div>
@@ -9,15 +9,16 @@
         <div class="col-5  inputf">
 
           <mat-form-field appearance="fill"  >
-          <mat-label style="color: #fff;">Pick league: </mat-label>
+          <mat-label style="color: #fff; border: 2px solid var(--first)">Pick league: </mat-label>
           <mat-select [(value)]="selectedLeague" >
-            <mat-option></mat-option>
-            <mat-option  [value]="option.value" *ngFor="let option of leagues" (click)="renderStanding(selectedLeague,id)">{{ option.viewValue }}</mat-option>
+            <mat-option ></mat-option>
+            <mat-option  [value]="option.value" *ngFor="let option of leagues" (click)="renderStanding(selectedLeague,id)" >{{ option.viewValue }}</mat-option>
            </mat-select>
            </mat-form-field>
           
-          <input type="number" [(ngModel)]="id" (click)="renderStanding(selectedLeague,id)" style="color: #fff; text-align: center;" >
-              <h1> {{id.value}}</h1>
+          <input type="number" [(ngModel)]="id" (click)="renderStanding(selectedLeague,id)" style="color: #fff; text-align: center; border: 2px solid var(--first);" >
+
+          <button class="btn" (click)="toLocal()"> Search</button>   
                     
         </div>
     </div>

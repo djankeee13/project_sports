@@ -1,1 +1,22 @@
-<p>basketball-stats works!</p>
+<div class="container">
+    <div class="row" *ngFor="let one of data">
+        <div class="col-7" style="background: var(--first); margin: 1px; color: white;">
+            <h4> Division: {{one.team.conference}}</h4>
+            <h1>Home {{one.game.home_team_score}} : {{one.game.visitor_team_score}} Away </h1>
+        </div>
+        <div class="col-4 edit-main" style="background: var(--second); margin: 1px; color: white;">
+            <h4>Player of the match: </h4>
+            <h3>{{one.player.first_name}} {{one.player.last_name}}</h3>
+            <h5>Height: {{one.player.height_feet}} ` {{one.player.height_inches}} ``</h5>
+            <div class="edit">
+                <h1>{{one.pts}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container edit-btn">
+        <button class="btn" (click)="previousPage()" [disabled]="isDisabled"> Previous</button>
+        <button class="btn" (click)="nextPage()"> Next</button>
+    </div>
+    
+   
+</div>

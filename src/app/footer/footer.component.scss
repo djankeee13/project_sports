@@ -1,0 +1,24 @@
+.footer{
+    background-color: var(--third);
+    width: 100%;
+    height: 147px;
+    margin-top: 8px;
+    color: #fff;
+    
+}
+.edit{
+    margin-top: 15px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+}
+.edit h4{
+    cursor: pointer;
+}
+.eflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}

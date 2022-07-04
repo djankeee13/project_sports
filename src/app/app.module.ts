@@ -20,6 +20,8 @@ import { BasketballTeamsComponent } from './basketball-teams/basketball-teams.co
 import { BasketballGamesComponent } from './basketball-games/basketball-games.component';
 import { BasketballStatsComponent } from './basketball-stats/basketball-stats.component';
 import { BasketballTeamsChildComponent } from './basketball-teams-child/basketball-teams-child.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { BasketballTeamsChildComponent } from './basketball-teams-child/basketba
     BasketballTeamsComponent,
     BasketballGamesComponent,
     BasketballStatsComponent,
-    BasketballTeamsChildComponent
+    BasketballTeamsChildComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,8 @@ import { ApifootballService } from '../services/apifootball.service';
 export class FootballStandingComponent implements OnInit {
   data!: any;
   stats!: any;
-  id: any = '2020';
+  id: any = '2022';
+  currentYear = new Date().getFullYear(); 
 
   leagues: any[] = [
     {value: 'eng.1', viewValue: 'England'},
@@ -32,7 +33,18 @@ export class FootballStandingComponent implements OnInit {
   constructor(private api: ApifootballService) { }
 
   ngOnInit(): void {
-    this.renderStanding('eng.1','2020') // query p zadnja god
+    /* this.renderStanding('eng.1','2020')  query p zadnja god */
+  
+  
+    this.id = localStorage.getItem("key1")
+    this.selectedLeague = localStorage.getItem("key2")
+    if(!this.id || !this.selectedLeague){
+      this.id = this.currentYear;
+      this.selectedLeague = 'eng.1';
+    } 
+    this.renderStanding( this.selectedLeague, this.id )  
+   
+    console.log(this.id, this.selectedLeague) 
   }
   renderStanding(pick: any,event : any){
      
@@ -41,8 +53,13 @@ export class FootballStandingComponent implements OnInit {
       this.data = res.data;
       this.stats = res.data.standings; 
      
-     console.log(this.stats) 
+    
     })
   
+  }
+  toLocal(){
+    localStorage.setItem("key1",this.id)
+    localStorage.setItem("key2",this.selectedLeague)
+    this.renderStanding(this.selectedLeague, this.id );
   }
 }
