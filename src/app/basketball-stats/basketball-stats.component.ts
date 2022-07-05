@@ -32,6 +32,7 @@ export class BasketballStatsComponent implements OnInit {
     this.renderData();
    
   }
+  
   previousPage(){
     this.c_page --;
     if(this.c_page < 1) {
@@ -40,6 +41,7 @@ export class BasketballStatsComponent implements OnInit {
     }
     this.renderData();
   }
+  
   /* .afterClosed().subsccribe(res =>{
     this.renderData()
   }) */
